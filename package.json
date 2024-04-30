@@ -1,0 +1,22 @@
+{
+  "name": "day-scheduler",
+  "version": "1.0.0",
+  "description": "calendar application that allows a user to save events for each hour of a typical working day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaneNathan/day-scheduler.git"
+  },
+  "author": "Nathan Lane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaneNathan/day-scheduler/issues"
+  },
+  "homepage": "https://github.com/LaneNathan/day-scheduler#readme",
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}
