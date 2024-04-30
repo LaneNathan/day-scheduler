@@ -13,7 +13,26 @@ $(document).ready(function(){
     },5000);
   });
 
+  function hourIncrementer(){
+    var currentHour = dayjs().hour();
 
+    $('.time-block').each(function(){
+      var displayHour = parseInt($(this).attr('id').split('-')[1]);
+
+      if(displayHour < currentHour) {
+        $(this).addClass('past');
+      } else if (displayHour === currentHour) {
+        $(this).removeClass('past');
+        $(this).addClass('present');
+      } else { 
+        $(this).removeClass('past');
+        $(this).removeClass('present');
+        $(this).removeClass('future');
+      }
+     });
+  }
+
+  hourIncrementer();
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
