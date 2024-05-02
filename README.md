@@ -1,5 +1,5 @@
 ## Day Scheduler
-![screenshot](./Develop/example/screenshot/Screenshot%202024-05-02%20125300.png)
+![screenshot](./example/screenshot/Screenshot%202024-05-02%20125300.png)
 # Description
 This application is a day scheduler designed to run in your browser that will simplify the task of organizing your tasks throughout the day. It uses nodejs to implement dayjs, a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times. This application is great for daily use and can hempl manage your time more efficiently.
 
