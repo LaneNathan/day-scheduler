@@ -2,7 +2,7 @@
   "name": "day-scheduler",
   "version": "1.0.0",
   "description": "calendar application that allows a user to save events for each hour of a typical working day",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
