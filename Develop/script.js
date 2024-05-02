@@ -1,4 +1,4 @@
-
+//function for for initial display
 $(document).ready(function(){
   $('.saveBtn').on('click', function (){
     var value = $(this).siblings('.description').val();
@@ -12,10 +12,10 @@ $(document).ready(function(){
       $('.notification').removeClass('show');
     },5000);
   });
-
+//function to differentiate the past, present and future time blocks
   function hourIncrementer(){
     var currentHour = dayjs().hour();
-
+//function for changing the background of each block based on its relative time
     $('.time-block').each(function(){
       var displayHour = parseInt($(this).attr('id').split('-')[1]);
 
@@ -31,11 +31,11 @@ $(document).ready(function(){
       }
      });
   }
-
+//calling on the time function
   hourIncrementer();
-
+//time difference for each block, to keep up with the current time
   setInterval(hourIncrementer, 15000);
-
+//storage for each time block text
   $('#hour-9 .description').val(localStorage.getItem('hour-9'));
   $('#hour-10 .description').val(localStorage.getItem('hour-10'));
   $('#hour-11 .description').val(localStorage.getItem('hour-11'));
@@ -45,7 +45,7 @@ $(document).ready(function(){
   $('#hour-15 .description').val(localStorage.getItem('hour-15'));
   $('#hour-16 .description').val(localStorage.getItem('hour-16'));
   $('#hour-17 .description').val(localStorage.getItem('hour-17'));
-
+//formula for setting the current day and time in the header
   $('#currentDay').text(dayjs().format('dddd, MMMM, D, YYYY'));
   $('#currentTime').text(dayjs().format('h:mm'))
 });
